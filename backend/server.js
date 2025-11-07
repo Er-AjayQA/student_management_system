@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ***************** All Routes ***************** //
-app.use("/api/v1", require("./api/userManagement/router/user.router.js"));
+app.use("/api/v1/admin", require("./api/userManagement/router/user.router.js"));
 
 // ***************** DB Sync ***************** //
 // db.um_user_master
